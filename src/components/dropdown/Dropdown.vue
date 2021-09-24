@@ -226,7 +226,7 @@ export default {
             return -1;
         },
         findOptionIndexInList(value, list) {
-            for (let i = 0; i < list.length; i++) {
+            for (let i = 0; i < list?.length??0; i++) {
                 if ((ObjectUtils.equals(value, this.getOptionValue(list[i]), this.equalityKey))) {
                     return i;
                 }
